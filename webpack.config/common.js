@@ -29,6 +29,7 @@ module.exports = {
       {
         test: /\.js$/,
         use: ['babel-loader'],
+        include: path.resolve(__dirname, 'src'),
         exclude: path.resolve(__dirname, '../node_modules'),
       },
       {
@@ -46,6 +47,7 @@ module.exports = {
           'postcss-loader',
           'sass-loader',
         ],
+        include: path.resolve(__dirname, 'src'),
         exclude: path.resolve(__dirname, '../node_modules'),
       },
     ],
