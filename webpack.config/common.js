@@ -47,7 +47,7 @@ module.exports = {
           'postcss-loader',
           'sass-loader',
         ],
-        include: path.resolve(__dirname, 'src'),
+        include: path.resolve(__dirname, '../src'),
         exclude: path.resolve(__dirname, '../node_modules'),
       },
     ],
